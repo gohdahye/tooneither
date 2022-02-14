@@ -1,0 +1,15 @@
+ul.mylist{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+.mylist li {
+    float:left;
+    margin-right:10px;
+}
+
+.mylist a {
+
+text-decoration-line:none;
+
+}
