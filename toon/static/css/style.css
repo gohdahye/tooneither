@@ -13,3 +13,7 @@ ul.mylist{
 text-decoration-line:none;
 
 }
+
+.nav-link {
+    margin-right:15px;
+}
