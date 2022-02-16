@@ -1,0 +1,24 @@
+{% extends 'toon/home.html' %}
+{% load static %}
+{% block toon_content %}
+    <div class="day_title d-flex justify-content-center">
+        <div class="day_group">
+            <p class="day_p">MONDAY</p>
+            <p class="day_s"><b style="color:#3B3B3B;">월요일 웹툰</b>으로<br>일주일을 열어보세요.</p>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="col-3">
+            <ul class="day_list">
+                <li><a class="no-unline" href="#">인기순</a></li>
+                <li><a class="no-unline" href="#">조회순</a></li>
+                <li><a class="no-unline" href="#">업로드순</a></li>
+                <li><a class="no-unline" href="#">별점순</a></li>
+            </ul>
+        </div>
+        <div class="col-9">
+
+        </div>
+    </div>
+
+{% endblock %}
