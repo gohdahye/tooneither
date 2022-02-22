@@ -1,16 +1,25 @@
 
-
 .t1,.t2,.t3{
     float:left;
 }
+.img-c {
+    width:150px;
+    float:left;
+    margin-right:10px;
 
+}
+.title{
+    padding-top:35px;
+}
 .day_title{
-    margin-top:88px;
     width:100%;
+    margin-top:85px;
+
 }
 
 .day_group{
     text-align:center;
+    margin-bottom:100px;
 }
 
 .day_p {
@@ -20,7 +29,7 @@
 }
 
 .day_s {
-    font-size:2.5rem;
+    font-size:1.8rem;
     color:#666666;
 }
 

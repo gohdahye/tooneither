@@ -1,16 +1,11 @@
 from django.shortcuts import render
 
 # Create your views here.
+from django.views.generic import ListView
+
+from toon.models import Toon
 
 
-def home(request):
-    return render(
-        request,
-        'toon/home.html'
-    )
-
-def mon(request):
-    return render(
-        request,
-        'toon/mon.html'
-    )
+class ToonList(ListView):
+    model = Toon
+    ordering = '-pk'

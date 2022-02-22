@@ -1,60 +1,44 @@
 {% extends 'base.html' %} {% load static %}
 {% block content %}
 
-<img src="{% static 'toon/images/banner.png' %}" width="100%" height="500px;">
+<img src="{% static 'toon/images/banner.png' %}" href="#" width="100%" height="400px;">
 
-<div class="container">
+<div class="container" style="width:800px; padding:0;">
     {% block toon_content %}
-        <div class="row mt-4">
+        <div class="row mb-3">
             <div class="title">
                 <img class="t1" src="{% static 'toon/images/fire.png' %}" width="30px" height="30px" alt="toon">
-                <h4 class="t2">DEBUT</h4>
+                <h5 class="h5 t2"><b>DEBUT</b></h5>
                 <img class="t3" src="{% static 'toon/images/fire.png' %}" width="30px" height="30px" >
             </div>
         </div>
-        <div class="row mt-3" style="margin-bottom:50px;">
+        <div class="row mb-3">
             <div class="col">
-                <img class="t1" src="http://placehold.it/230x212">
-            </div>
-            <div class="col">
-                <img class="t1" src="http://placehold.it/230x212">
-            </div>
-            <div class="col">
-                <img class="t1" src="http://placehold.it/230x212">
-            </div>
-            <div class="col">
-                <img class="t1" src="http://placehold.it/230x212">
-            </div>
-            <div class="col">
-                <img class="t1" src="http://placehold.it/230x212">
+                <img class="img-c" src="{% static 'toon/images/image1.png'%}" width="150">
+                <img class="img-c" src="{% static 'toon/images/image2.png'%}" width="150">
+                <img class="img-c" src="{% static 'toon/images/image3.png'%}" width="150">
+                <img class="img-c" src="{% static 'toon/images/image4.png'%}" width="150">
+                <img class="img-c" src="{% static 'toon/images/image5.png'%}" width="150">
             </div>
         </div>
-        <div class="row mt-4">
+        <div class="row">
             <div class="title">
-                <h4 class="t2">번데기를 기다리고 있어요</h4>
+                <h5 class="h5 t2"><b>번데기를 기다리고 있어요<b/></h5>
                 <img class="t3" src="{% static 'toon/images/hand.png' %}" width="30px" height="30px" >
             </div>
         </div>
-        <div class="row mt-3">
-            <div class="col">
-                <img class="t1" src="http://placehold.it/230x212">
-            </div>
-            <div class="col">
-                <img class="t1" src="http://placehold.it/230x212">
-            </div>
-            <div class="col">
-                <img class="t1" src="http://placehold.it/230x212">
-            </div>
-            <div class="col">
-                <img class="t1" src="http://placehold.it/230x212">
-            </div>
-            <div class="col">
-                <img class="t1" src="http://placehold.it/230x212">
+        <div class="row mb-3">
+           <div class="col">
+                <img class="img-c" src="{% static 'toon/images/image1.png'%}" width="150">
+                <img class="img-c" src="{% static 'toon/images/image2.png'%}" width="150">
+                <img class="img-c" src="{% static 'toon/images/image3.png'%}" width="150">
+                <img class="img-c" src="{% static 'toon/images/image4.png'%}" width="150">
+                <img class="img-c" src="{% static 'toon/images/image5.png'%}" width="150">
             </div>
         </div>
 
     <div class="row" style="margin-top:95px;">
-        <img src="{% static 'toon/images/banner2.png' %}" width="1120px" height="235px" >
+        <img src="{% static 'toon/images/banner2.png' %}" width="1120px" height="180px" >
     </div>
     {% endblock %}
 </div>
