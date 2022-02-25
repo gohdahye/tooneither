@@ -39,7 +39,6 @@
 
 .day_list li:first-child {
      color : #396AFF;
-     font-weight:bold;
 }
 .day_list li {
        margin-bottom : 24px;
@@ -57,4 +56,15 @@
 }
 .day_list li a.no-unline:active {
    text-decoration:none;
+}
+
+.toon_c{
+    font-family : 'Noto Sans KR';
+    font-size : 0.75rem;
+    color:#828282;
+}
+
+.toon_author{
+    font-family : 'Noto Sans KR';
+    font-size : 0.85rem;
 }

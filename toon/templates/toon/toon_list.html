@@ -3,33 +3,35 @@
 {% block toon_content %}
     <div class="day_title d-flex justify-content-center">
         <div class="day_group">
-            <p class="day_p">MONDAY</p>
-            <p class="day_s"><b style="color:#3B3B3B;">월요일 웹툰</b>으로<br>일주일을 열어보세요.</p>
+            <p class="day_p">전체 웹툰 리스트</p>
+
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-2">
-                <ul class="day_list">
-                    <li><a class="no-unline" href="#">인기순</a></li>
-                    <li><a class="no-unline" href="#">조회순</a></li>
-                    <li><a class="no-unline" href="#">업로드순</a></li>
-                    <li><a class="no-unline" href="#">별점순</a></li>
-                </ul>
-            </div>
-            <div class="col-9">
-                <div class="row">
-                    {% for t in toon_list %}
-                    <div class="card border-0" style="width:13rem;">
-                        <img class="card-img-top" href="{{ t.get_absolute_url }}" src="{% static 'toon/images/img-d1.png'%}" alt="monday-webtoon">
-                        <div class="card-body">
-                            <a class="text-decoration-none" href="#">박태준 / 김성모</a>
-                            <p class="card-text">{{ t.title }}</p>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
+            <ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'mon' %}">MON</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">TUE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">WED</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">THU</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FRI</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SAT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SUN</a>
+                </li>
+            </ul>
         </div>
     </div>
 

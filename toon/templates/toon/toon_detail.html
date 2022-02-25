@@ -1,0 +1,35 @@
+{% extends 'toon/home.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container" tyle="width: 80%;">
+    <div class="row d-flex justify-content-center">
+        <div class="container mb-3 d-flex align-items-center" style="width: 65%;padding:0;">
+            <div class="box" style="margin:0;">
+                <img class="me-3" src="{{ toon.head_image.url }}" alt="toon-img" width="180" height="135">
+            </div>
+            <div class="flex-grow-1">
+                <div class="card-body" >
+                    <div class="d-flex align-items-end mb-2">
+                         <h5 class="card-title" style="float:left; margin:0 15px 0 0">{{ toon.title }}</h5>
+                        <p class="card-text toon_author">박태준 / 김성모</p>
+                    </div>
+                    <div class="row">
+                        <p class="card-text toon_c" style="width: 65%;">{{ toon.content }}</p>
+                        <p class="card-text"><small class="text-muted">번데기 이상 번역 가능</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 65%;">
+    </div>
+
+    <div class="row" style="margin-top:55px;">
+        <div class="container mb-3 d-flex justify-content-center" style="width: 65%;padding:0;">
+            {% if toon.file_image %}
+            <img class="img-fluid" src="{{ toon.file_image.url }}">
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

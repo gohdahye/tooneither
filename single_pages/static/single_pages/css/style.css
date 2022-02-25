@@ -17,3 +17,13 @@ text-decoration-line:none;
 .nav-link {
     margin-right:15px;
 }
+
+.nav-link{
+    font-family : 'Noto Sans KR';
+    font-size:15px;
+}
+
+.nav-t {
+    font-family : 'Noto Sans KR';
+    font-size:13px;
+}
