@@ -1,0 +1,29 @@
+ul.mylist{
+    list-style-type:none;
+    margin:0px;
+    padding:0px;
+}
+.mylist li {
+    float:left;
+    margin-right:10px;
+}
+
+.mylist a {
+
+text-decoration-line:none;
+
+}
+
+.nav-link {
+    margin-right:15px;
+}
+
+.nav-link{
+    font-family : 'Noto Sans KR';
+    font-size:15px;
+}
+
+.nav-t {
+    font-family : 'Noto Sans KR';
+    font-size:13px;
+}

@@ -1,0 +1,86 @@
+
+.t1,.t2,.t3{
+    float:left;
+}
+.img-c {
+    width:150px;
+    float:left;
+    margin-right:10px;
+
+}
+.title{
+    padding:35px 0 0 0;
+}
+.day_title{
+    width:100%;
+    margin-top:85px;
+
+}
+
+.day_group{
+    text-align:center;
+    margin-bottom:100px;
+}
+
+.day_p {
+    color : #396AFF;
+    font-weight:bold;
+    font-size:0.75rem;
+}
+
+.day_s {
+    font-size:1.8rem;
+    color:#666666;
+}
+
+.day_list{
+
+    list-style:none;
+}
+
+.day_list li:first-child {
+     color : #396AFF;
+}
+.day_list li {
+       margin-bottom : 24px;
+}
+.day_list li a.no-unline:link {
+   text-decoration:none;
+}
+.day_list li a.no-unline:visited {
+   text-decoration:underline;
+   text-underline-position: under;
+}
+.day_list li a.no-unline:hover {
+   text-decoration:underline;
+   text-underline-position: under;
+   font-weight:bold;
+}
+.day_list li a.no-unline:active {
+   text-decoration:none;
+}
+
+.mybox1{
+    width:50px ;
+    height:80px !important;
+}
+
+.mybox2{
+    width:50px ;
+    height:20px !important;
+}
+
+.toon_c{
+    font-family : 'Noto Sans KR';
+    font-size : 0.75rem;
+    color:#828282;
+}
+
+.toon_author{
+    font-family : 'Noto Sans KR';
+    font-size : 0.85rem;
+}
+
+.nav-link{
+    float: left;
+}

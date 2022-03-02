@@ -60,6 +60,16 @@
    text-decoration:none;
 }
 
+.mybox1{
+    width:50px ;
+    height:80px !important;
+}
+
+.mybox2{
+    width:50px ;
+    height:20px !important;
+}
+
 .toon_c{
     font-family : 'Noto Sans KR';
     font-size : 0.75rem;
@@ -73,4 +83,19 @@
 
 .nav-link{
     float: left;
+}
+
+.my_input{
+    width:150px;
+    border-top : none;
+    border-left : none;
+    border-right: none;
+    border-bottom : 1px solid black;
+}
+
+.list-unstyled li a{
+    color : black;
+    font-size : 0.75rem;
+    padding : 0;
+    margin : 5px;
 }
