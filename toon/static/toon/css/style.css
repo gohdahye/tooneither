@@ -9,7 +9,7 @@
 
 }
 .title{
-    padding-top:35px;
+    padding:35px 0 0 0;
 }
 .day_title{
     width:100%;
@@ -34,6 +34,7 @@
 }
 
 .day_list{
+
     list-style:none;
 }
 
@@ -53,6 +54,7 @@
 .day_list li a.no-unline:hover {
    text-decoration:underline;
    text-underline-position: under;
+   font-weight:bold;
 }
 .day_list li a.no-unline:active {
    text-decoration:none;
@@ -67,4 +69,8 @@
 .toon_author{
     font-family : 'Noto Sans KR';
     font-size : 0.85rem;
+}
+
+.nav-link{
+    float: left;
 }

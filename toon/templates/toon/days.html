@@ -1,10 +1,10 @@
-{% extends 'single_pages/landing.html' %}
+{% extends 'toon/toon_list.html' %}
 {% load static %}
 {% block toon_content %}
     <div class="day_title d-flex justify-content-center">
         <div class="day_group">
-            <p class="day_p">MONDAY</p>
-            <p class="day_s"><b style="color:#3B3B3B;">월요일 웹툰</b>으로<br>일주일을 열어보세요.</p>
+            <p class="day_p">{{ day.full }}</p>
+            <p class="day_s"><b style="color:#3B3B3B;">{{ day.korean }} 웹툰</b>으로<br>일주일을 열어보세요.</p>
         </div>
     </div>
     <div class="container">
@@ -19,15 +19,14 @@
             </div>
             <div class="col-9">
                 <div class="row d-flex justify-content-center">
-                    {% for t in toons %}
-                    <div class="card border-0" style="width:10rem;">
+                    {% for t in toon_list %}
+                    <div class="card border-0" style="width:11rem;">
                         <a href="{{ t.get_absolute_url }}">
                             <img class="card-img-top"  src="{{ t.head_image.url }}" alt="monday-webtoon">
                         </a>
-
                         <div class="card-body">
-                            <a class="text-decoration-none" href="#">박태준 / 김성모</a>
-                            <p class="card-text">{{ t.title }}</p>
+                            <a class="text-decoration-none" href="#" style="font-size:0.8rem;">{{ t.author.first_name }}</a>
+                            <p class="card-text" style="font-size:0.75rem;">{{ t.title }}</p>
                         </div>
                     </div>
                     {% endfor %}
