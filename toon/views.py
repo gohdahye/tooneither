@@ -29,6 +29,7 @@ class ToonDetail(DetailView):
 class ToonCreate(CreateView):
     model = Toon
     fields = ['title', 'file_image', 'content', 'day']
+
     def form_valid(self, form):
         current_user = self.request.user
         if current_user.is_authenticated:
