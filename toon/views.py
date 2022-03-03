@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 # Create your views here.
 from django.views.generic import ListView, DetailView, CreateView
@@ -28,7 +28,14 @@ class ToonDetail(DetailView):
 
 class ToonCreate(CreateView):
     model = Toon
-    fields = ['title', 'file_image', 'day']
+    fields = ['title', 'file_image', 'content', 'day']
+    def form_valid(self, form):
+        current_user = self.request.user
+        if current_user.is_authenticated:
+            form.instance.author = current_user
+            return super(ToonCreate, self).form_valid(form)
+        else:
+            return redirect('/')
 
 
 def days_page(request, slug):
